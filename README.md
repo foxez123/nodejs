@@ -1,6 +1,6 @@
 # nodejs
 
-node.js 관련 몇가지 소스 확인하기
+node.js 소스 정리
 
 1. array reduce example
 2. binary processing using Buffer
