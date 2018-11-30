@@ -38,4 +38,27 @@ value={ myChar: 'C' }
 path=2
 return=[ { myChar: 'A' }, { myChar: 'B' }, { myChar: 'C' } ]
 
-2. reduce for string return
+2. reduce example (count the animals)
+let arr = []
+arr[0] = "Tiger";
+arr[1] = "Lion";
+arr[2] = "Lion";
+arr[3] = "Cat";
+arr[4] = "Tiger";
+arr[5] = "Lion";
+
+console.log( "Source array=" +  util.inspect(arr) );
+
+let result = arr.reduce(
+    (acc, val) => {   //
+        if( val in acc ) {
+            acc[val]++;
+        } else {
+            acc[val] = 1;
+        }
+        return acc;
+    },
+    {}  // initail Value
+);
+
+console.log(result);
