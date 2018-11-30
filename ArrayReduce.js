@@ -47,7 +47,7 @@ arr[3] = "Cat";
 arr[4] = "Tiger";
 arr[5] = "Lion";
 
-console.log( "Source array=" +  util.inspect(arr) );
+console.log( "Source array=" +  util.inspect(arr) );  // Source array=[ 'Tiger', 'Lion', 'Lion', 'Cat', 'Tiger', 'Lion' ]
 
 let result = arr.reduce(
     (acc, val) => {   //
@@ -61,4 +61,4 @@ let result = arr.reduce(
     {}  // initail Value
 );
 
-console.log(result);
+console.log(result);   // { Tiger: 2, Lion: 3, Cat: 1 }
